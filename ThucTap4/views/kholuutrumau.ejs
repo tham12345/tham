@@ -79,7 +79,7 @@
 	  <!--button-->
 
 <!--cố định  bảng-->
-<!--	  <script   
+	 <script   
 	  src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js">
 	   </script>
 	   <script>
@@ -128,10 +128,10 @@
 	   }
    
 	   $(document).ready(function(){
-		   scrolify($('#tblNeedsScrolling'), 110); // 160 is height
+		   scrolify($('#tblNeedsScrolling'), 304); // 160 is height
 	   });
   
-	   </script>-->
+	   </script>
 	   <!--cố định bản -->
 </head>
 <body>
@@ -142,10 +142,7 @@
 					
 					 
 					  <li><a href="#">KHO LƯU TRỮ MÁU</a>
-						<ul class="sub-menu">
-								<li><a href="#">Thêm máu vào kho</a></li>
-								<li><a href="#">Xem danh sách máu</a></li>
-							 </ul>
+					
 					</li>
 
 					  <li><a href="#">THANH LÝ TÚI MÁU</a></li>
@@ -169,42 +166,7 @@
 	<div class="wrap1">
     <div class="wrap">
     	
-	<!--	   <div class="menu">
-				<div class="menuholder">
-						
-								<ul class="menu slide">
-									<li><a href="https://www.script-tutorials.com/" class="red"><img width=  56px; height=33px; src="./image/7.png"><br>Thêm</a> </li>
-						
-									<li><a href="https://www.script-tutorials.com/" class="orange"><img width=  56px; height=33px src="./image/10.png"><br>Lưu</a>
-										
-									</li>
-						
-									<li><a href="https://www.script-tutorials.com/category/resources/" class="yellow"> <img width=  56px; height=34px; src="./image/1212.png"><br>Xóa</a>
-						
-										
-									</li>
-						
-									<li><a href="https://www.script-tutorials.com/category/resources/" class="green"><img width=  56px; height=33px; src="./image/0.png"><br>Làm mới</a></li>
-						
-									<li><a href="https://www.script-tutorials.com/about/" class="blue"><img width=  60px; height=33px; src="./image/6.png"> <br>In</a></li>
-						
-									<li><a href="https://www.script-tutorials.com/creating-css3-dropdown-menu-3/" class="violet"><img width= 60px; height=33px; src="./image/1.png"><br>Danh sách</a></li>
-									<br><div class="timkiem">
-										<form id="demo-2">
-											<input type="search" placeholder="Tìm kiếm">
-										</form>
-										</div>
-								</ul>
-								
-								<div class="back"></div>
-						
-								<div class="shadow"></div>
-						
-							</div>
-						
-							<div style="clear:both"></div>
-						
-	</div>-->
+	
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script type="text/javascript">
         function searchToggle(obj, evt){
@@ -230,10 +192,10 @@
     			<table id="form-table">
     				<form name="formnhapthongtin">
 							
-							<tr> <th style="width:120px;" align="right">Số tiếp nhận: </th>
-								<td style="width:100px;"><input autofocus="autofocus" style ="height: 26px;"type="text" id = "Sotiepnhan"> </td>
-								 <th style="width:70px;" >Ngày : </th> 
-									<td style="width:160px; margin-right: 4px;" ><input type="date" id ="Ngay1"> </td>
+							<tr> <th id="stn1"  align="right">Số tiếp nhận: </th>
+								<td id="inputstn"><input class="inputstn1" autofocus="autofocus" type="text" id ="Sotiepnhan"> </td>
+								 <th id="ngaystn" >Ngày : </th> 
+									<td id="inputstn"><input type="date" id ="Ngay1"> </td>
 									</tr>
 	</form>
 	</table>
@@ -244,9 +206,9 @@
 								<form name="formnhapthongtin2">
 									
     					<tr>
-    						<th style="width:120px;">Nhà cung cấp:</th>
+    						<th id="stn">Nhà cung cấp:</th>
     						<td class="tt">
-    							<select id="Nhacungcap">
+    							<select class="m1" id="Nhacungcap">
 										<option >
     								
     								</option>
@@ -257,8 +219,8 @@
     						</td>
     					</tr>    				
     					<tr>
-    						<th>Đơn vị giao: </th>
-    						<td class="tt">
+    						<th id="stn" >Đơn vị giao: </th>
+    						<td class="m1">
     							<select id="Donvigiao">
     								<option>
     									
@@ -276,18 +238,18 @@
     						</td>
     					</tr> 
                         <tr>
-                            <th>Đơn vị nhận: </th>
+                            <th id="stn" >Đơn vị nhận: </th>
                             <td>
-                                <select id="Donvinhan">
+                                <select class="m1" id="Donvinhan">
 									<option value="default"></option>
                                     <option>Kho răng hàm mặt</option>
                                 </select>
                             </td>
 						</tr> 
 						<tr>
-								<th>Người nhận: </th>
+								<th id="stn" >Người nhận: </th>
 								<td>
-									<select id="Nguoinhan">
+									<select class="m1"id="Nguoinhan">
 										<option value="default"></option>
 										<option>System Administrator</option>
 									</select>
@@ -305,13 +267,14 @@
     					
 			<!--end nhap thong tin-->
     		<div id="info">
+					
     			<table id="form-hienthi"  >
     				<form name="formhienthithongtin">
     					
     					<tr>
-							<th >Trạng thái:</th>
-    						<td >
-    							<select id="Trangthai">
+							<td id="hd" >Trạng thái:</td>
+    						<td class="trangthai1" >
+    							<select  id="Trangthai">
 										<option >
     								
     								</option>
@@ -320,8 +283,8 @@
     								</option>
     							</select>
 							</td>   	
-							<td align="center" style="width: 50px;" >Nguồn máu:</td>
-    						<td   colspan="2" >
+							<td align="center" class="nguonmau1">Nguồn máu:</td>
+    						<td class="nguonmau2"  colspan="2" >
 								<select id="Nguonmau">
 										<option value="default"></option>
 										<option >
@@ -331,91 +294,123 @@
     								
     								</option>
 								</select>
-								<td style=""> </td>
+								
     						</td>   							
     					</tr>
     					<tr>
-								<th style="" >Ký hiệu mẫu hóa đơn: </th> 
-								<td  colspan="4"><input  style="height: 28px; width: 300px;" type="text"  id="Kyhieumauhoadon"> </td>
-								<td></td>
-								<td></td>
-							
-								<td></td>
+								<td id="hd" >Ký hiệu mẫu hóa đơn: </td> 
+								<td  class =" kyhieu" colspan="4"><input   type="text"  id="Kyhieumauhoadon"> </td>
+								
 								
 						</tr>
 						<tr>
-								<th  >Số seri: </th> 
-								<td ><input  style="height: 28px;  width: 125px;" type="text" id="Soseri"> </td>
+								<td id="hd" >Số seri: </td> 
+								<td class="seri1"><input  type="text" id="Soseri"> </td>
 								
-								<td ><input style="height: 28px; width: 125px;" type="text" > </td>
-								<td  style="width: 50px;">Ngày : </td> 
-								<td  ><input style="height: 28px;"  type="date" id="Ngay2" > </td>
+								<td class="seri2"><input  type="text" > </td>
+								<td  id="ngayseri">Ngày: </td> 
+								<td  class ="seri3" ><input  type="date" id="Ngay2" > </td>
 
 						</tr>
 						<tr>
-								<th >Diễn giải: </th> 
-								<td  colspan="4" ><textarea cols="50" rows="4" id="Diengiai" ></textarea></td>
+								<td id="hd">Diễn giải: </td> 
+								<td  colspan="4" ><textarea cols="52" rows="4" id="Diengiai" ></textarea></td>
 								
 						</tr>
 
     				</form>
-    			</table>
+				</table>
+	
 			</div>
 			</div><br>
 			<!--end thong tin mau-->
 
 <div class="table-tuimau">
-		<fieldset style="height: 100px;  border-radius: 20px;">
+		
 <table id="ban-tuimau" >
 
 	<form >
 		
 
 		<tr>
-			<th>Mã túi máu:</th>
-			<td><input style=" height: 26px; width: 180px;" type="text" id = "Matuimau"> </td>
-			<th>Ngày lấy máu</th>
-
-		</tr><tr>			<td><input style=" height: 26px; width: 180px;"  type="date" id = "Ngaylaymau">  </td>
-			<th>Hạn sử dụng:</th>
-			<td><input style=" height: 26px; width: 180px;"  type="date" id = "Hansudung"> </td>
+			<td>Mã túi máu:</td>
+			<td  ><input class="banmm"  type="text" id = "Matuimau"> </td>
+			<td>Ngày lấy máu</td>
+			<td><input class="banmm"   type="date" id = "Ngaylaymau">  </td>
+			
+		</tr>
+		<tr>
+				<td>Đơn giá mua:</td>
+				<td><input class="banmm" type="text" id = "Dongiamua"></td>
+						
+			<td>Hạn sử dụng:</td>
+			<td><input class="banmm"   type="date" id = "Hansudung"> </td>
 		
 			
 		</tr>
 		<tr>
-
-			<th>Đơn giá mua:</th>
-			<td><input style=" height: 26px; width: 180px;" type="text" id = "Dongiamua"></td>
-		
-			<th>Số lượng</th>
-			<td><input style=" height: 26px; width: 60px;" type="text" id = "Soluong"></td>
+				<td>Đặt hàng:</td>
+				<td><input  class="banmm"  type="text" id="Dathang" ></td>
+			
+			<td>Số lượng:</td>
+			<td><input class="banmm"  type="text" id = "Soluong"></td>
 		</tr>
 		<tr>
-			<th>Đặt hàng:</th>
-			<td><input  style=" height: 26px; width: 180px;" type="text" id="Dathang" ></td>
-			<th>Loại sản phẩm:</th>	
-			<td>
-					<select style="height: 26px; width: 180px" id = "Loaisanpham"  >
-							<option value="default"></option>
-							<option>Đã nhập kho</option>
-							<option>Bạch mai</option>
-					</select>
-			</td>
-		</tr>
+			
+				<td>Loại sản phẩm:</td>	
+				<td class="sanpham">
+						<select class="sanpham1" id = "Loaisanpham"  >
+								<option value="default"></option>
+								<option>Đã nhập kho</option>
+								<option>Bạch mai</option>
+						</select>
+				</td>
 	
+	
+		<td>nhóm AOB:</td>
+		<td > <select class="sanpham1"  id = "NhomABO">
+				<option value="default"></option>
+				<option >
+			A
+			</option>
+			<option >
+			O
+			</option>
+			<option >
+					B
+			</option>
+		</select></td>
+
+	</tr>
+
+		<tr><td>nhóm RhD:</td>
+			<td ><select class="sanpham1"id = "NhomRhD">
+					<option value="default"></option>
+					<option >
+				D+
+				</option>
+				<option >
+					Bạch mai
+				</option>
+			</select></td>
+			<td>Thành tiền VAT:</td>
+			<td><input class="banmm" type="text" id = "Thanhtienvat"></td>
 		
+		</tr>
 	</form>
 </table>
-</fieldset>
+
 </div>
+
+
 <!--end table-tuimau-->
-<div class="table-nhommau1">
+	<!--
 	<div class="table-nhommau">
-		<fieldset style=" border-radius: 20px; height: 70px;">
+		
 	<table id="ban-nhommau">
 	<form>
 
-		<tr> <th>NHÓM AOB:</th>
+		<tr> <td>NHÓM AOB:</td>
 		<td colspan="3"> <select style="width: 175px; "  id = "NhomABO">
 				<option value="default"></option>
 				<option >
@@ -430,7 +425,7 @@
 		</select></td>
 		<td></td>
 		<td></td>
-	 <th>NHÓM RhD:</th>
+	 <td>NHÓM RhD:</td>
 			<td colspan="3"><select style="width: 175px;" id = "NhomRhD">
 					<option value="default"></option>
 					<option >
@@ -442,96 +437,128 @@
 			</select></td>
 			<td></td>
 			<td></td>
-				<th>Thành tiền VAT:</th>
-				<td><input  style="  height: 26px;"type="text" id = "Thanhtienvat"></td>
-				<td style="width: 60px; "><button style="width: 40px; height: 40px;" onclick = "getInfo()" type = "button"> <a  href="#" class="a-btn"><span class="a-btn-icon-right"><span ></span></span></a></button></td>
+				<td>Thành tiền VAT:</td>
+				<td><input  style="  height: 26px;"type="text" id = "Thanhtienvat"></td>-->
+			<!--	<td style="width: 60px; "><button style="width: 40px; height: 40px;" onclick = "getInfo()" type = "button"> <a  href="#" class="a-btn"><span class="a-btn-icon-right"><span ></span></span></a></button></td>-->
 			<!--	<td style="width: 60px;"><a  href="#" class="a-btn"><span  class="a-btn-icon-close"><span ></span></span></a></td>-->
-		</tr>
+	<!--	</tr>
 </form>
 </table>
-</fieldset>
+
+</div>
+-->
+
+	
+
+<div class="nut">
+		<button id="nutxem"  onclick = "getInfo()" type = "button"> Xem Thông tin</button>
+
 	</div>
-	</div>
+    
+	
+
 	<!--end table-nhommau-->
 <br>
 <!---end túi máu -->
 <!-- bang thong tin-->
 			<div class="panel-body">
-				
+				<div class="panel-body2">
 					<span style="font-size: 20px; color:#ffffff;margin-left: 12px; ">Thông tin máu</span>
 				<div class="form1">
 					<form class="bangthongtin" >
 				
 						
 						<table class="bangthong-tin" cellspacing="0" border="1 "  cellpadding="2" id="tblNeedsScrolling" >
-							
-						<tr style=" background:rgb(8, 89, 143);color:#ffffff; ">
+							<thead>
+						<tr id="tieudeban"  >
 						
-						<th>Số tiếp nhận</th>
-						<th>Ngày:</th>
-						<th>Mã túi máu</th>
-						<th>Hạn dùng</th>
-						<th>Ngày lấy máu</th>
-						<th>Nhóm ABO</th>
-						<th>Nhóm RhD</th>
-						<th>Số Lượng </th>
-						<th>Đơn giá mua</th>
-						<th>Loại Sản Phẩm</th>
-						<th>Đơn vị giao</th>
-						<th>Đơn vị nhận</th>
-						<th>Người Nhận</th>
+						<th ><p class="overflow-ellipsis">Số tiếp nhậnsdoifjisdjijifjosdfooias</p></th>
+						<th><p class="overflow-ellipsis">Ngày:</p></th>
+						<th><p class="overflow-ellipsis">Mã túi máu</p></th>
+						<th><p class="overflow-ellipsis">Hạn dùng</p></th>
+						<th><p class="overflow-ellipsis">Ngày lấy máu</p></th>
+						<th><p class="overflow-ellipsis">Nhóm ABO</p></th>
+						<th><p class="overflow-ellipsis">Nhóm RhD</p></th>
+						<th><p class="overflow-ellipsis">Số Lượng</p> </th>
+						<th><p class="overflow-ellipsis">Đơn giá mua</p></th>
+						<th><p class="overflow-ellipsis">Loại Sản Phẩm</p></th>
 						
 						
 						
-						<th colspan = "2" >Lựa  Chọn</th>
+						
+						
 						</tr >
-					
+					</thead>
+					<tbody>
 						<tr >
-						<td> <div id="val-1"></div></td>
-						<td><div id = "val-2"></div></td>
-						<td><div id ="val-3"></div></td>
-						<td><div id="val-4"></div></td>
-						<td> <div id="val-5"></div></td>
-						<td><div id="val-6"></div></td>
-						<td><div id ="val-7"></div></td>
-						<td><div id = "val-8"></div></td>
-						<td><div id="val-9"></div></td>
-						<td> <div id="val-10"></div></td>
-						<td><div id="val-11"></div></div></td>
+						<td> <div id="val-1"></div><p class="overflow-ellipsis">hniokopkinjompmfvgbnjlmkjnhjghjhj</p></td>
+						<td><div id = "val-2"></div><p class="overflow-ellipsis">biuniomo;pomkmkm</p></td>
+						<td><div id ="val-3"></div><p class="overflow-ellipsis">jbyvtfuhihugyftfyug</p></td>
+						<td><div id="val-4"></div><p class="overflow-ellipsis">buuihuiyuybyvtcr</p></td>
+						<td> <div id="val-5"></div><p class="overflow-ellipsis">jbjbbuihiojim</p></td>
+						<td><div id="val-6"></div><p class="overflow-ellipsis">iuyg65d4sdrtgyuf</p></td>
+						<td><div id ="val-7"></div><p class="overflow-ellipsis">tyvrtd5fgiuhu</p></td>
+						<td><div id = "val-8"></div><p class="overflow-ellipsis">yttcrtyugyuftrdew34</p></td>
+						<td><div id="val-9"></div><p class="overflow-ellipsis">de4serttfrc</p></td>
+						<td><div id="val-9"></div><p class="overflow-ellipsis">de4serttfrc</p></td>
 					
-						<td><div id ="val-12"></td>
-							<td> <div id="val-13"></div></td>
-							
-								
-						<td><input id="check" type="checkbox"> </td>
-						<td><a href=""><img   style =" width: 15px; height: 15px;" src="./image/but.png"></a></td>
+					
+					
 						</tr>
-						</tr >
 						
+						<tr >
+							<td> <div id="val-1"></div><p class="overflow-ellipsis">hniokopkinjompmfvgbnjlmkjnhjghjhj</p></td>
+						<td><div id = "val-2"></div><p class="overflow-ellipsis">biuniomo;pomkmkm</p></td>
+						<td><div id ="val-3"></div><p class="overflow-ellipsis">jbyvtfuhihugyftfyug</p></td>
+						<td><div id="val-4"></div><p class="overflow-ellipsis">buuihuiyuybyvtcr</p></td>
+						<td> <div id="val-5"></div><p class="overflow-ellipsis">jbjbbuihiojim</p></td>
+						<td><div id="val-6"></div><p class="overflow-ellipsis">iuyg65d4sdrtgyuf</p></td>
+						<td><div id ="val-7"></div><p class="overflow-ellipsis">tyvrtd5fgiuhu</p></td>
+						<td><div id = "val-8"></div><p class="overflow-ellipsis">yttcrtyugyuftrdew34</p></td>
+						<td><div id="val-9"></div><p class="overflow-ellipsis">de4serttfrc</p></td>
+						<td><div id="val-9"></div><p class="overflow-ellipsis">de4serttfrc</p></td>
 					
-			
-				
 					
-									</table>
+						</tr>
+						<tr >
+							<td> <div id="val-1"></div><p class="overflow-ellipsis">hniokopkinjompmfvgbnjlmkjnhjghjhj</p></td>
+						<td><div id = "val-2"></div><p class="overflow-ellipsis">biuniomo;pomkmkm</p></td>
+						<td><div id ="val-3"></div><p class="overflow-ellipsis">jbyvtfuhihugyftfyug</p></td>
+						<td><div id="val-4"></div><p class="overflow-ellipsis">buuihuiyuybyvtcr</p></td>
+						<td> <div id="val-5"></div><p class="overflow-ellipsis">jbjbbuihiojim</p></td>
+						<td><div id="val-6"></div><p class="overflow-ellipsis">iuyg65d4sdrtgyuf</p></td>
+						<td><div id ="val-7"></div><p class="overflow-ellipsis">tyvrtd5fgiuhu</p></td>
+						<td><div id = "val-8"></div><p class="overflow-ellipsis">yttcrtyugyuftrdew34</p></td>
+						<td><div id="val-9"></div><p class="overflow-ellipsis">de4serttfrc</p></td>
+						<td><div id="val-9"></div><p class="overflow-ellipsis">de4serttfrc</p></td>
+					
+					
+							
+							
+									</tbody>	
+							
+							
+		</table>
 							
 				
 					</form>
 					</div>
-				</div>
+				</div></div>
 
 
 		  </div>
 		</div>
-	</div><br>
+	</div>
+	<br>
 
 	
 
 
     <div class="footer">
     	
-      	<span id="footer1">	<marquee>Tư vấn hệ thống - Liên hệ: 070xxxxx - Website công ty: vnptit.vn</marquee></span>
+      	<span >	<marquee>Tư vấn hệ thống - Liên hệ: 070xxxxx - Website công ty: vnptit.vn</marquee></span>
      
-      		<span>Copyright &copy; 2019 by VNPT</span>
+      		
       	</div>
     
 </body>
