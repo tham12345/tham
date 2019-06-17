@@ -1,0 +1,436 @@
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+padding: 40px 0px;
+  width: 1520px;
+  height: 100px;
+
+/* background-image:  url("/image/hinhnen12.png");; */
+
+
+}
+
+    
+/*menu co dinh*/
+#fixNav{
+    width: 100%;
+    height: 35px;
+    background-color: #01458E;
+    display: block;
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.5); /*Đổ bóng cho menu*/
+    position: fixed; /*Cho menu cố định 1 vị trí với top và left*/
+    top: 0; /*Nằm trên cùng*/
+    left: 0; /*Nằm sát bên trái*/
+   
+    z-index: 100000; /*Hiển thị lớp trên cùng*/
+
+  }
+  #fixNav ul{
+    margin: 0;
+    padding: 0;
+  }
+  #fixNav ul li{
+    list-style:none inside;
+    width: 150px;
+    float: left;
+    line-height: 35px; /*Cho text canh giữa menu*/
+    color: #fff;
+    padding: 0;
+    margin-right:10px;
+    position: relative;
+  }
+  #fixNav ul li a{
+    text-transform: uppercase;
+    white-space: nowrap; /*Cho chữ trong menu không bị wrap*/
+    padding: 0 10px;
+    color: #fff;
+    display: block;
+    font-size: 0.8em;
+    text-decoration: none;
+  }
+  /*CSS Style cho Submenu*/
+  #fixNav ul li ul {
+    position: absolute;
+    width: 150px;
+    display: none;
+    background-color: #252525;
+    
+   
+  }
+  
+  #fixNav ul li ul li{
+    display: block;
+    padding:0;
+    margin: 0;
+    float: none; /*Bỏ float cho li cấp thứ 2*/
+  }
+  /* Hover cho submenu */
+  #fixNav ul li:hover {
+    /* Hover thì li sẽ đổi màu*/
+    width: 150px;
+  
+    background-color: rgb(99, 216, 21);
+  }
+  #fixNav ul li:hover ul{
+    /*Display ra submenu*/
+    display: block;
+  }
+
+  
+  /*Không copy cái này, dùng tăng padding top bottom để demo cuộn*//*
+  p{
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+/*end menu*/
+.wrap{
+
+    width: 101%;
+    height: 630px;
+ 
+    
+    
+ /*   background-image: linear-gradient(to top, whitef 0%, blue 150%);*/
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-attachment: fixed;
+    opacity: 0.8;
+    background:rgb(155, 155, 158);
+}
+/*
+#banner{
+    width: 98%;
+    height: 30px;  
+    margin-bottom: 0px;
+    background-image: url("/image/banner.jpg");
+}
+#logo{
+    width: 12,5%;
+    height: 80%;
+    float: left;}
+
+#title-banner{
+    width: 77.5%;
+    height: 70%;
+    text-align: center;
+    line-height: 100px;
+    font-weight: Arial;
+    font-size: 40px;
+    color: #fff;
+    float: left;
+    background-image:  linear-gradient(to right,#ffff, #00dbde);
+    margin: 0;
+    margin-left: 2px;
+    text-shadow: 0px 0px 0px #b2a98f,
+                 0px 4px 2px rgba(0,0,0,0.15),
+                 0px 7px 0px rgba(0,0,0,0.1),
+                 0px 10px 9px rgba(0,0,0,0.1);}
+/*khu vuc nut  thoát và trang chủ*//*
+#trangchu{
+    width: 17%;
+    height: 100px;
+    float: right;
+
+    line-height: 5px;}
+/***/
+/*
+
+#btnTrangchu{
+    display: block;
+    text-align: center;
+    height: 40px;
+    float: left;
+    width: 125px;
+    outline: 0;
+    color: #00000;
+    border-radius: 40px;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 10);
+    -moz-box-shadow:0px 0px 6px rgba(0, 0, 0, 10);
+    -webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 10);
+   }
+ 
+/*
+#btnThoat{
+    float: left;
+    outline: 0;
+    display: block;
+    text-align: center;
+    height: 40px;
+    border-radius: 40px;
+    width: 125px;
+    font-weight: bold;
+    color: #00000;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 10);
+    -moz-box-shadow:0px 0px 6px rgba(0, 0, 0, 10);
+    -webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 10);
+}
+/*phan than html*/
+.content{
+    
+    width: 100%px;
+
+    height: 300px;}
+/*form so tiep nhận & nha cung cap*/
+#form-kholuutrumau{
+    color: white;
+    font-size: 13px;
+    width: 700px;
+    height: 160px;
+margin-left: 60px;
+    float: left;}
+    /*bang so tiep nhan*/
+#stn{
+
+    width: 120px;
+}
+#stn1{  width: 72px;
+}
+.m1{
+width: 300px;
+}
+#inputstn{
+
+    width:20px;
+}
+#inputstn input[type=text]{
+
+width: 30px;
+height: 25px;
+}
+#ngaystn{
+width: 40px;
+}
+#inputstn input[type=date]{
+height: 25px;
+    width: 130px;
+}
+
+
+#form-table{
+
+    margin-top: -10px;
+    width: 650px;
+    height: 50px;}
+
+    .nhapthongtin {
+      width: 400px;}
+   
+
+#form-table td{
+    height: 5px;
+  
+    text-align: left ;
+}
+    #form-table input[type=text]{
+    width: 130px;
+}/**/
+ /*nha cung cap*/
+#form-table2{
+    margin-top: -9px;
+    width: 650px;
+    height: 50px;
+    
+}
+ 
+#form-table2 td,th{
+    height: 30px;
+    text-align: left;
+
+   }
+
+   .nhapthongtin2{ 
+    height: 200px;
+} /**/
+select {
+    font-size: 13px;
+    height: 29px;
+    padding-right: 10px; /* If you add too much padding here, the options won't show in IE */
+    width:90%; }
+    /* khu vuc bang trang thai*/
+
+    #vien-nhom-mau1{
+        border-radius: 10px;
+
+    }
+    /*
+#info{
+  color:black;
+    font-size: 13px;
+  
+ 
+    height: 160px;
+    float: left;
+    text-align: left;
+    display: inline;}
+/*ban trang tai*/
+/*
+#form-hienthi{
+  
+  
+    height:  120px;}
+    #form-hienthi td{
+       
+    }
+    
+    .trangthai1{width: 60px}
+.trangthai1 select{
+
+    width: 100%;
+}
+    .seri1 input[type=text]{
+        height: 26px;  width:100px;}
+     .seri1{
+        width: 60px;
+     }
+    
+    .seri2 input[type=text]{
+height: 26px; width:100px;
+    
+    }
+    .seri3 input[type=date]{
+        height: 26px;  width: 98%;
+    }
+    .nguonmau2 select{
+        width: 100%; 
+    }
+#ngayseri{
+
+}
+.kyhieu input[type="text"]{
+    height: 28px; width: 99%;
+}
+.nguonmau1{}
+/*bản ben trai*/
+
+.table-tuimau{
+float: left;
+
+    height: 170px;
+    width: 700px;
+margin-top: 0px;
+
+margin-left: 10px;
+}
+.table-tuimau td{
+    text-align: left;
+
+    }
+#ban-tuimau td{
+   
+    height: 50px;
+
+
+}
+#ban-tuimau{
+    width: 700px;
+  
+}
+/*bản ben phai*/
+
+
+.banmm {
+height: 30px; width: 96%;
+
+}
+
+.sanpham1 {
+height: 30px;
+    width: 98%;
+}
+.nut{
+   
+ margin-top: -5px;
+ margin-bottom: 10px;
+    width: 100%;
+float: left;
+
+}
+#nutxem{
+
+    display: block;
+    text-align: center;
+    height: 40px;
+    float: left;
+    width: 100%;
+    outline: 0;
+    color: #00000;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 10);
+    -moz-box-shadow:0px 0px 6px rgba(0, 0, 0, 10);
+    -webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 10);   
+}
+
+       /*bản hien thi cuoi*/
+    .panel-body2{
+
+        float: left;
+        width:1625px;
+        border:1px solid black;
+       
+        
+} 
+
+.panel-body{
+    overflow:auto;
+    float: left;
+    width: 1530px;
+    border:2px solid black;
+   
+    
+} 
+.bangthong-tin{
+margin-left: 10px;
+width:1600px;
+font-size: 14px;
+border:  1px solid ;
+text-align: center;
+
+}
+.bangthong-tin th {
+    
+    color: white;
+    background: rgba(17, 6, 80, 0.9);
+    white-space: nowrap;
+    text-align: center;
+width: 100px;
+border: solid 1px;
+    z-index: 100000; /*Hiển thị lớp trên cùng*/
+}
+.bangthong-tin td{
+    text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+}
+ 
+/**/
+.footer {
+    width: 100%;
+    height: 30px;
+    float: left;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: brown;
+    
+  
+  
+}
+p{
+    width: 100px;
+  
+    padding: 2px 5px;
+  
+    /* BOTH of the following are required for text-overflow */
+    white-space: nowrap;
+    overflow: hidden;
+}
+.overflow-ellipsis {
+    text-overflow: ellipsis;
+  }
