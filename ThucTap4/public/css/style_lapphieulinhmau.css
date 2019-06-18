@@ -1,3 +1,4 @@
+
 *{
     padding: 0;
     margin: 0;
@@ -104,68 +105,125 @@ body{
     width: 100%px;
     height: 300px;}
 /*form so tiep nhận & nha cung cap*/
+/*----------------------------------------------------------------------------*/
 #form-kholuutrumau{
     color: black;
-    width: 700px;
-    font-weight: bold;
-    height: 160px;
+    width: 600px;
+    height: 200px;
     float: left;
-    margin-left: 60px;}
+    margin-left: px;}
 .form-table2{ 
-      width: 650px; 
+       
     height: 50px;     
     }    
 .form-table2 td{
     height: 30px;
-    text-align: left;    
-       }     
-#inputstn input[type=text]{
-    width: 200px;
-    height: 26px;
-}
-.stn{
-    width: 200px;
-}
-#inputstn input[type=date]{
-    height: 26px;
-    width: 140px;
-}
-.m1 select{
-    font-size: 13px;
-    height: 32px;  
-    padding-right: 10px; /* If you add too much padding here, the options won't show in IE */
-    width:488px; }
-/*----------------------------------------------------------------------------------------*/
-.table-tuimau{
-    float: left;
-    height: 170px;
-    width: 700px;
-    margin-top: 0px;
-    margin-left: 10px;
-    font-weight: bold;
-}
-.table-tuimau td{
     text-align: left;
-    height: 50px;
+    width: 150px;    
+       }   
+.stn{
+  
+    width: 100px;
+
+}
+#inputstn input[type=radio]{
+ margin-right: 60%;
+}
+#inputstn input[type=text]{
+    width: 145px;
+    height: 25px;
+}
+.inputstn select{
+    height: 29px;
+    width: 99%;
+}
+.m3 input[type=text]{
+        border: none;
+        background:none;
+        outline: none;
+        width: 100px;
+    }   
+    
+/*----------------------------------------------------------------------------------------*/
+#info{
+    color:black;
+    height: 160px;
+    float: left;
+    text-align: left;
+    display: inline;}
+
+/*ban trang tai*/
+#form-hienthi td{
+  height: 10px;
+ 
     }
-#ban-tuimau{
-    width: 700px; 
+.pl1{
+    width:110px;}
+.pl1 select{
+    width: 100%;
+    height: 26px;}
+
+.pl2 input[type=text]{
+        width: 98%;
+        height: 24px;
+    }
+.pl1 input[type=text]{
+    width: 98%;
+    height: 24px;
 }
-.banmm input[type=text] {
-    height: 28px; width: 99%;
+.pl1 select{
+    width: 99%;
+    height: 29px;
 }
-.banmm1{
-    width:100px; 
+.pl1 input[type=datetime]{
+    width: 98%;
+    height: 24px;
+}
+.yte1{
+    width: 300px;
+}
+.yte1  input[type=text]{
+    widows: 80px;
+    text-align: left;
+}
+.yte1 select{
+    width: 98%;
+    height: 29px;
 }
 
+/*end */
+ /*---------------------------------------------------------------------------------------------*/
+.table-tuimau{
+    background: #8aa3f8;
+        float: left;
+        height: 170px;
+        width: 310px;
+        margin-top: -19px;
+        margin-left: 10px;
+}
+.table-tuimau td{
+        text-align: left;
+        height:35px;
+    }
+/*bản ben phai*/
+.banmm1{
+        width: 145px;
+}
+.banmm{ width: 120px;}
+.banmm input[type=text]{
+        height: 24px;
+} 
+.banmm select{
+        height: 28px;
+        width: 99%;
+        }
 /*---------------------------------------------------------------------------------------------*//*nut xem*/
 .nut{  
-    margin-top: 10px;
+    margin-top: 40px;
     margin-bottom: 10px;      
     width: 100%;
     float: left;
     cursor: pointer;
-
 }
 #nutxem{
     cursor: pointer;
@@ -183,18 +241,17 @@ body{
 #nutxem:hover{  
     background: #01458E;
 }
-/**************************************************************************************************/
- /*bản hien thi cuoi*/
+       /*bản hien thi cuoi*/
 .panel-body2{
-    float: left;
-    width:1625px;
-    border:1px solid black;       
+        float: left;
+        width:1625px;
+        border:1px solid black;      
 } 
 .panel-body{
     overflow:auto;
     float: left;
     width: 1530px;
-    border:2px solid black;  
+    border:2px solid black;   
 } 
 .bangthong-tin{
     margin-left: 10px;
@@ -203,28 +260,31 @@ body{
     border:  1px solid ;
     text-align: center;
 }
-.bangthong-tin th {
+.bangthong-tin th {    
     color: white;
-    background: rgba(17, 6, 80, 0.9);
+    background: #01458E;
     white-space: nowrap;
-    text-align: center;width: 100px;border: solid 1px;
+    text-align: center;
+    width: 100px;
+    border: solid 1px;
     z-index: 100000; /*Hiển thị lớp trên cùng*/
 }
 .bangthong-tin td{
     text-overflow: ellipsis;
     overflow: hidden;
-    white-space: nowrap;
+     white-space: nowrap;                
 }
 p{
-    width: 100px; 
-    padding: 2px 5px; 
+    width: 100px;  
+    padding: 2px 5px;
     white-space: nowrap;
     overflow: hidden;
 }
 .overflow-ellipsis {
     text-overflow: ellipsis;
   }
-/***********************************************************************************************/
+
+/*--------------------------------------------------------------------------------------------------------------------------*/
 .footer {
     width: 100%;
     height: 30px;
@@ -233,7 +293,4 @@ p{
     font-size: 20px;
     font-weight: bold;
     color: brown;
-    
-  
-  
 }
