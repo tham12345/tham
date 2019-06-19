@@ -1,347 +1,255 @@
-* {
+
+*{
     padding: 0;
     margin: 0;
-    background-color: #d1d1d1;
 }
+body{
+
+    width:auto;
+    height: 100px;
+    font-family: serif, sans-serif, Arial, Helvetica, sans-serif;
+}
+/*-------------------------------------------------------------------------------------*/
 .wrap{
-    height: 654px;
-    width: 99%;
-    background-color: #ffffff;
-    border: 1px solid #d1d1d1;
-    border-radius: 15px;
-    text-align: center;
-    margin: auto;
-}
-.title{
-    height: 10%;
-    border-bottom: 1px solid #d1d1d1;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    background-color: #000099;
-}
-.title-div1{
-    width: 30%;
-    height: 100%;
-    float: left;
-    margin-right: 6px;
-    background-color: #000099;
-    border-top-left-radius: 15px;
-}
-.title-div2{
-    width: 39%;
-    height: 81%;
-    float: left;
-    background-color: #000099;
-    font-size: 42px;
-    color: whitesmoke;
-    padding-top: 3px;
-    font-weight: 700;
-    letter-spacing: 1px;
-}
-.title-div3{
-    width: 30%;
-    height: 100%;
-    float: right;
-    background-color: #000099;
-    border-top-right-radius: 15px;
-}
-.dropdown {
-	position: relative;
-    display: block;
-    background-color: #d1d1d1;
-}
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #d1d1d1;
-    color: black;
-    margin-top: 50.5px;
-    margin-left: 200px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 5px 16px;
-    z-index: 1;
-}
-.dropdown:hover .dropdown-content {
-    display: block;
-    cursor: pointer;
-}
-.dropdown-content p:hover{
-    color: #000099;
-    background-color: #d1d1d1;
-    border-bottom: 1px solid #000099;
-}
-.button-trangchu{
-    cursor: pointer;
-    background-color: #d1d1d1;
-    width: auto;
-    height: auto;
-    font-size: 14px;
-    font-weight: 400;
-    color: #000099;
-    text-align: center;
-    margin-top: 14px;
-    padding: 8px 7px;
-    float: right;
-    margin-right: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, .3), inset 0 1px 0 rgba(255, 255, 255, .2);
-}
-.button-trangchu:hover{
-    background-color: #afaeae;
-    color: #002080;
-}
-.content{
-    height: 82%;
-    background-color: #ffffff;
-    margin-top: 3px;
-    margin-bottom: 3px;
-}
-.content1{
-    height: 53%;
     width: 100%;
-    margin-bottom: 1px;
-    background-color: #ffffff;
-    border-top: 1px solid #d1d1d1;
-}
-.content1-top{
-    height: 84%;
-    width: 100%;
-    background-color: #ffffff;
-}
-.content1-bot{
-    height: 15%;
-    width: 100%;
-    margin-top: 2px;
-    background-color: #000099;
-}
-.content1-bot button{
-    background-color: #d1d1d1;
-    font-size: 28px;
-    height: 100%;
-    width:100%;
-    outline: none;
-    color: #000099;
-    font-weight: 600;
-}
-.content1-bot button:hover{
-    color: whitesmoke;
-    background-color: #000099;
-    cursor: pointer;
-}
-.content1-left{
-    height: 100%;
-    width: 49%;
-    background-color: #ffffff;    
-    border-right: 1px solid #d1d1d1;
-    border-bottom: 1px solid #d1d1d1;
-    float: left;
-}
-.content1-right{
-    height: 100%;
-    width: 49%;
-    border: 1px solid #d1d1d1;
-    float: right;
-}
-.content2{
-    height: 47.5%;
-    width: 100%;
-    background-color: #000099;
-    background-color: #ffffff;
-    border-top: 1px solid #d1d1d1;
-}
-.danhsachmau{
-    height: 100%;
-    width: 100%;
-}
-.div1{
-    height: 20%;
-    width: 100%;
-    background-color: #ffffff;
-    margin-bottom: 3px;
-}
-.div-title{
-    width: 45%;
-    height: 100%;
-    background-color: #ffffff;
-    float: left;
-}
-.div-title span{
-    float: left;
-    width: 100%;
-    height: 100%;
-    font-size: 20px;
-    padding-top: 10px;
-    font-weight: 600;
-    background-color: #ffffff;
-}
-.div-timkiem{
-    width: 36%;
-    height: 60%;
-    background-color: #ffffff;
-    float: left;
-    margin-top: 9px;
-    margin-left: 10px;
-    border-radius: 15px;
-    border: 1px solid #d1d1d1;
-}
-.div-timkiem:hover{
-    border: 1px solid #000099;
-    border-radius: 15px;
-}
-.div-timkiem i{
-    color: black;
-    cursor: pointer;
-    background-color: #ffffff;
-    margin-right: 5px;
-}
-.div-timkiem i:hover{
-    color: #000099;
-}
-.search{
-    height: 95%;
-    width: 87%;
-    text-align: center;
-    outline: none;
-    margin-left: 8px;
-    background-color: #ffffff;
-    border: 0px;
-}
-.div-check-all{
-    height: 100%;
-    width: 17%;
-    float: right;
-    background-color: #ffffff;
-}
-.span-check-all{
-    height: 100%;
-    width: 44%;
-    float: right;
-    padding-top: 13px;
-    background-color: #ffffff;
-}
-.span-check-all span{
-    font-size: 18px;
-    font-weight: 600;
-    background-color: #ffffff;
-}
-.div-checkall{
-    height: 100%;
-    width: 55%;
-    float: left;
-    text-align: right;
-    background-color: #ffffff;
-    padding-top: 14px;
-    padding-right: 5px;
-}
-.div2{
-    height: 78%;
-    width: 100%;
-    background-color: #ffffff;
-    overflow: auto;
-}
-.row{
-    height: 20%;
-    width: 100%;
-    background-color: #ffffff;
-    margin-bottom: 1px;
-    border-bottom: 1px solid #000099;
-}
-.row:hover{
-    /* background-color: #000099; */
-    border-bottom: 1px solid red;
-}
-.row-left{
-    height: 100%;
-    width: 90%;
-    float: left;
-    background-color: #ffffff;
-}
-.row-right{
-    height: 100%;
-    width: 9%;
-    float: right;
-    padding-top: 8px;
-    background-color: #ffffff;
-}
-.content1-left-row{
-    height: 19.5%;
-    width: 100%;
-    margin-bottom: 2px;
-    background-color: #ffffff;
-}
-.div-span{
-    height: 100%;
-    width: 30%;
-    float: left;
-    background-color: #ffffff;
-}
-.div-span span{
-    float: left;
-    width: 100%;
-    height: 100%;
-    font-size: 20px;
-    padding-top: 8px;
-    font-weight: 600;
-    background-color: #ffffff;
-    border-bottom: 1px solid #000099;
-}
-.group-date{
-    width: 69%;
-    height: 100%;
-    background-color: #ffffff;
-    float: right;
-}
-.inp{
-    font-size:20px;
-    text-align: center;
-    font-weight: 600;
+    height: 630px;  
+ /*   background-image: linear-gradient(to top, whitef 0%, blue 150%);*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;  
+    background:lightgrey;
+} 
+/*-------------------------------------------------------------------------------------------------*/
+/* thanh menu ngang */
+.clearfix:after {
     display:block;
+    clear:both;          
+}
+.wrapper {
     width:100%;
-    height: 100%;
-    border:none;
-    background-color: #ffffff;
-    border-bottom: 1px solid #000099;
+    box-shadow:0px 1px 3px rgba(0,0,0,0.2); 
+    background:#01458E;    
 }
-.inp:focus 		{ outline:none; }
-.content2-top1-2{
+/*----- Phần menu -----*/
+.menu {
+    width:1000px;
+    margin:0px auto;
+    background:#01458E;
+    height: 40px;
+  
+}
+.menu li {
+    margin:0px;
+    list-style:none;
+    font-family:'Ek Mukta';
+}
+.menu a {
+    transition:all linear 0.15s;
+    color:white;
+    text-decoration:none;
+}
+.menu li:hover > a, .menu .current-item > a {
+    text-decoration:none;
+    color:#8aa3f8;
+} 
+.menu .arrow {
+    font-size:11px;
+    line-height:0%;
+} 
+/*----- css cho phần menu cha -----*/
+.menu > ul > li {
+    float:left;
+    display:inline-block;
+    position:relative;
+    font-size:19px;
+}
+.menu > ul > li > a {
+    padding:10px 40px;
+    display:inline-block;
+    color:white;
+}
+.menu > ul > li:hover > a, .menu > ul > .current-item > a {
+    background:#41393a;
+}
+/*----css cho menu con----*/
+.menu li:hover .sub-menu {
+    z-index:1;
+    opacity:1;
+}
+.sub-menu {
+    width:160%;
+    padding:5px 0px;
+    position:absolute;
+    top:100%;
+    left:0px;
+    z-index:-1;
+    opacity:0;
+    transition:opacity linear 0.15s;
+    box-shadow:0px 2px 3px rgba(0,0,0,0.2);
+    background:#41393a;
+}
+.sub-menu li {
+    display:block;
+    font-size:16px;
+}
+.sub-menu li a {
+    padding:10px 30px;
+    display:block;
+}
+.sub-menu li a:hover, .sub-menu .current-item a {
+    background:rgb(66, 66, 66) ;
+}
+/*-----------------------------------------------------------------------------------*/
+/*phan than html*/
+.content{    
+    width: 100%px;
+    height: 300px;}
+/*form so tiep nhận & nha cung cap*/
+/*----------------------------------------------------------------------------*/
+#form-kholuutrumau{
+    color: black;
+    width: 700px;
+    font-weight: bold;
+    height: 160px;
+    float: left;
+    margin-left: 15px;}
+.form-table2{ 
+    width: 650px; 
+    height: 50px;     
+    }    
+.form-table2 td{
+    height: 40px;
+    text-align: left;    
+       }     
+#inputstn input[type=text]{
+    width: 98%;
+    height: 29px;
+}
+#inputstn input[type=date]{
+    height: 29px;
+    width: 98%;
+}
+.m1 select{
+    height: 32px;  
+     /* If you add too much padding here, the options won't show in IE */
+    width:100%; }
+/*----------------------------------------------------------------------------------------*/
+#info{
+    color:black;
+    font-size: 13px;
+    height: 140px;
+    float: left;
+    text-align: left;
+    display: inline;
+}
+#info2{
+    height: 130px;
+    overflow:auto;
+}
+/*ban trang tai*/ 
+}
+
+#form-hienthi tr {
+	border-bottom: solid black 10px; 
+	border-collapse: collapse;
+	width:100%;
+	padding:2px;
+	vertical-align:top;
+	text-align: left;
+}
+#form-hienthi td{
+       border-bottom: solid black thin; 
+        border-collapse: collapse;
+         padding:3px; 
+    }
+
+#form-hienthi{
+width: 770px;
+
+}
+
+#pl1{
+    text-align: center;
+    width: 770px;
+   }
+#pl{
+    text-align: left;
+    width: 790px;
+}
+
+/*---------------------------------------------------------------------------------------------*//*nut xem*/
+.nut{  
+    margin-top: 13px;
+    margin-bottom: 10px;      
     width: 100%;
-    height: 30%;
-    margin: 0px auto 8px auto;
-    background-color: #ffffff;
+    float: left;
+    cursor: pointer;
 }
-.content2-top1-3{
+#nutxem{
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    height: 40px;
+    float: left;
     width: 100%;
-    height: 30%;
-    background-color: #ffffff;
+    outline: 0;
+    color: #00000;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 10);
+    -moz-box-shadow:0px 0px 6px rgba(0, 0, 0, 10);
+    -webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 10);   
 }
-.content2-top2{
-    height: 100%;
-    width: 54%;
-    background-color: #ffffff;
-    border-bottom: 1px solid #d1d1d1;
-    border-left: 1px solid #d1d1d1;
-    float: right;
+#nutxem:hover{  
+    background: #01458E;
 }
-.content2-bot{
+       /*bản hien thi cuoi*/
+.panel-body2{
+        float: left;
+        width:1625px;
+        border:1px solid black;      
+} 
+.panel-body{
+    overflow:auto;
+    float: left;
+    width: 1530px;
+    border:2px solid black;   
+} 
+.bangthong-tin{
+    margin-left: 10px;
+    width:1600px;
+    font-size: 14px;
+    border:  1px solid ;
+    text-align: center;
+}
+.bangthong-tin th {    
+    color: white;
+    background: #01458E;
+    white-space: nowrap;
+    text-align: center;
+    width: 100px;
+    border: solid 1px;
+    z-index: 100000; /*Hiển thị lớp trên cùng*/
+}
+.bangthong-tin td{
+    text-overflow: ellipsis;
+    overflow: hidden;
+     white-space: nowrap;                
+}
+p{
+    width: 100px;  
+    padding: 2px 5px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.overflow-ellipsis {
+    text-overflow: ellipsis;
+  }
+/*--------------------------------------------------------------------------------------------------------------------------*/
+.footer {
     width: 100%;
-    height: 40%;
-    background-color: #ffffff;
-    border-top: 1px solid #d1d1d1;
-}
-.footer{
-    height: 7%;
-    background-color: #040458;
-    border-top: 1px solid #d1d1d1;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-}
-marquee{
-    background-color: #040458;
-    color: whitesmoke;
+    height: 30px;
+    float: left;
+    text-align: center;
     font-size: 20px;
-    font-weight: 300;
-    margin-top: 8px;
-    font-size: 24px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    font-weight: bold;
+    color: brown;
 }
