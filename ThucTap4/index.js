@@ -28,7 +28,7 @@ var lapphieulinhmauRoutes = require('./routes/lapphieulinhmau');
 var xuatmaungoaibenhvienRoutes = require('./routes/xuatmaungoaibenhvien');
 var tonghopbaocaoRoutes = require('./routes/tonghopbaocao');
 var kiemkeRoutes = require('./routes/kiemke');
-
+var biendongkhoRoutes = require('./routes/biendongkho');
 
 app.use('/', indexRoutes);
 app.use('/danhmucmachepham', danhmucmachephamRoutes);
@@ -40,4 +40,4 @@ app.use('/lapphieulinhmau', lapphieulinhmauRoutes);
 app.use('/xuatmaungoaibenhvien', xuatmaungoaibenhvienRoutes);
 app.use('/tonghopbaocao', tonghopbaocaoRoutes);
 app.use('/kiemke', kiemkeRoutes);
-
+app.use('/biendongkho', biendongkhoRoutes);
