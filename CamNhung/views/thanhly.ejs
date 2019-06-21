@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Xuất máu ngoài bệnh viện</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet shortcut icon" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style_thanhly.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <% include nav %>
+        <div class="div-form">
+            <form>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-label-2">
+                                    <label for="inputAddress">Số phiếu:</label>
+                                </div>
+                                <div class="col-input-2">
+                                    <input type="text" class="form-control" id="inputAddress" placeholder="Số phiếu" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-label-2">
+                                    <label for="inputAddress">Ngày xuất:</label>
+                                </div>
+                                <div class="col-input-2">
+                                    <input type="date" class="form-control" id="inputAddress" placeholder="" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-label-2">
+                                    <label for="inputAddress">Nơi xuất:</label>
+                                </div>
+                                <div class="col-input-2">
+                                    <input type="text" class="form-control" id="inputAddress" placeholder="Nơi xuất" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-label-2">
+                                    <label for="inputAddress">Nơi nhận:</label>
+                                </div>
+                                <div class="col-input-2">
+                                    <input type="text" class="form-control" id="inputAddress" placeholder="Nơi nhận" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-label-2">
+                                    <label for="inputAddress">Người xuất:</label>
+                                </div>
+                                <div class="col-input-2">
+                                    <input type="text" class="form-control" id="inputAddress" placeholder="Người xuất" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-label-2">
+                                    <label for="inputAddress">Người duyệt:</label>
+                                </div>
+                                <div class="col-input-2">
+                                    <input type="text" class="form-control" id="inputAddress" placeholder="Người duyệt" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-label-2">
+                                    <label for="inputAddress">Mã túi máu:</label>
+                                </div>
+                                <div class="col-input-2">
+                                    <input type="text" class="form-control" id="inputAddress" placeholder="Mã túi máu">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-label-2">
+                                    <label for="inputAddress">Tên máu:</label>
+                                </div>
+                                <div class="col-input-2">
+                                    <input type="text" class="form-control" id="inputAddress" placeholder="Tên túi máu" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-label-2">
+                                    <label for="inputAddress">Nguồn máu:</label>
+                                </div>
+                                <div class="col-input-2">
+                                    <input type="text" class="form-control" id="inputAddress" placeholder="Nguồn máu" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-label-2">
+                                    <label for="inputAddress">Số lượng xuất:</label>
+                                </div>
+                                <div class="col-input-2">
+                                    <input type="text" class="form-control" id="inputAddress" placeholder="Số lượng xuất" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-label-2">
+                                    <label for="inputAddress">Lí do xuất:</label>
+                                </div>
+                                <div class="col-input-2">
+                                    <input type="text" class="form-control" id="inputAddress" placeholder="Lý do xuất" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-label-2">
+                                    <label for="inputAddress">Trạng thái:</label>
+                                </div>
+                                <div class="col-input-2">
+                                    <input type="text" class="form-control" id="inputAddress" placeholder="Trạng thái" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary form-control ">Thêm thông tin</button>
+                </div>
+            </form>
+        </div>
+        <div style="margin-right: -15px">
+            <div class="table-responsive">
+                <div class="header-table">
+                    <table class="table">
+                        <thead>
+                            <th class="th-stt">STT</th>
+                            <th>Số phiếu</th>
+                            <th>Ngày xuất</th>
+                            <th>Nơi xuất</th>
+                            <th>Nơi nhận</th>
+                            <th>Người xuất</th>
+                            <th>Người duyệt</th>
+                            <th>Mã túi máu</th>
+                            <th>Tên máu</th>
+                            <th>Nguồn máu</th>
+                            <th>Số lượng xuất</th>
+                            <th>Lý do</th>
+                            <th>Trạng thái</th>
+                        </thead>
+                    </table>
+                </div>
+                <div class="body-table">
+                    <table class="table table-hover">
+                        <tbody>
+                            <tr>
+                                <td class="td-stt">STT</td>
+                                <td>Huyết tương hồng cầu đen đỏ vàng trắng, ...</td>
+                                <td>20/09/2019</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
